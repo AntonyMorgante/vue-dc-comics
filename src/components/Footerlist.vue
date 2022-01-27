@@ -1,13 +1,11 @@
 <template>
-  <div> 
-    <span class="ft-list-title">Titolo </span>
-    <ul>
-      <li>Prova</li>
-      <li>Prova</li>
-      <li>Prova</li>
-      <li>Prova</li>
-    </ul>
-  </div>
+  <ul> 
+    <li class="ft-list-title">Titolo </li>
+    <li>Prova</li>
+    <li>Prova</li>
+    <li>Prova</li>
+    <li>Prova</li>
+  </ul>
 </template>
 
 <script>
@@ -20,8 +18,10 @@ export default {
 <style scoped lang="scss">
   .ft-list-title{
     font-weight: bold;
+    padding-bottom: 10px;
   }
   ul{
     list-style-type: none;
+    margin-right: 10px;
   }
 </style>
