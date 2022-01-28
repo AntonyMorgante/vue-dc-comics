@@ -1,34 +1,29 @@
 <template>
   <div>
     <section class="fst-foot-section">
-      <div class="space-around container">
-        <Feature />
-        <Feature />
-        <Feature />
-        <Feature />
+      <div class="container">
         <Feature />
       </div>
     </section>
     <section class="snd-foot-section">
-      <div class="flex-column container">
-        <Footerlist />
-        <Footerlist />
-        <Footerlist />
-        <Footerlist />
+      <div class ="container">
+        <div class="flex-column">
+          <Footerlist />
+          <Footerlist />
+          <Footerlist />
+          <Footerlist />
+        </div>
       </div>
+
     </section>
     <section class="trd-foot-section">
       <div class="space-between container">
-        <button type="button">Sign-up now!</button>
+        <div class="blue-button">Sign-up Now!</div>
         <div>
-          <ul>
-            <li>Follow us</li>
-            <li> <Social /> </li>
-            <li> <Social /> </li>
-            <li> <Social /> </li>
-            <li> <Social /> </li>
-            <li> <Social /> </li>
-          </ul>
+          <div class="space-between">
+            <span>Follow us</span>
+            <div> <Social /> </div>
+          </div>
         </div>
       </div>
     </section>
@@ -57,14 +52,9 @@ export default {
     max-width:1170px;
     margin: auto;
   }
-  
-  .space-around{
-    display:flex;
-    justify-content: space-around;
-  }
 
   .fst-foot-section{
-    background-color: blue;
+    background-color: rgb(2,130,249);
     padding: 20px 0;
   }
 
@@ -87,21 +77,28 @@ export default {
   .trd-foot-section{
     background-color: rgb(48,48,48);
 
+    .blue-button{
+      border: solid 1px rgb(2,130,249);
+      display: inline-block;
+      color:white;
+      text-transform: uppercase;
+      width:200px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      margin:10px 0;
+    }
+
     .space-between{
       display:flex;
       justify-content: space-between;
       align-items: center;
 
-      ul{
-        list-style-type : none;
-        color: white;
-
-        li{
-          display: inline-block;
-          padding: 0 10px;
-        }
+      span{
+        color:rgb(2,130,249);
+        text-transform: uppercase;
       }
     }
   }
-
+  
 </style>

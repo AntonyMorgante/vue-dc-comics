@@ -3,16 +3,11 @@
     <div class="space-between">
         <img src="../assets/dc-logo.png" alt="">
         <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>Tv</li>
-            <li>Games</li>
-            <li>Collectibles</li>
-            <li>Videos</li>
-            <li>Fans</li>
-            <li>News</li>
-            <li>Shop</li>
+            <li v-for="(element, index) in links" :key="index" :class="{active: isActive}">
+                <a href="#">
+                    {{element.name}}
+                </a>
+            </li>
         </ul>
     </div>
 </div>
@@ -20,7 +15,63 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data: function(){
+      return{
+          links:[
+              {
+                  name: "Characters",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "Comics",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "Movies",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "Tv",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "Games",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "Collectibles",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "Videos",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "Fans",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "News",
+                  url: "#",
+                  current: false
+              },
+              {
+                  name: "Shop",
+                  url: "#",
+                  current: false
+              }
+          ]
+      }
+  }
 }
 </script>
 
@@ -42,6 +93,11 @@ export default {
                 display:inline-block;
                 padding: 0 10px;
                 text-transform: uppercase;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
             }
         }
     }
