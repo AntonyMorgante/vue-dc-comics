@@ -9,9 +9,6 @@
       <div class ="container">
         <div class="flex-column">
           <Footerlist />
-          <Footerlist />
-          <Footerlist />
-          <Footerlist />
         </div>
       </div>
 
