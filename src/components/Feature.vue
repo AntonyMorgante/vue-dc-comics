@@ -1,9 +1,9 @@
 <template>
   <div class="space-around">
-    <div v-for="(element,index) in features" :key="index" class="ft-flex-start">
+    <a href="#" v-for="(element,index) in features" :key="index" class="ft-flex-start">
       <img :src="element.image">
       <span>{{element.name}}</span>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -45,12 +45,16 @@ export default {
     justify-content: space-around;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   .ft-flex-start{
     display:flex;
     justify-content: flex-start;
     align-items: center;
     color: white;
-    flex-basis: 20%;
+    flex-basis: calc(100% / 6);
     text-transform: uppercase;
     align-items: center;
 
@@ -62,7 +66,7 @@ export default {
 
     span{
       font-size: 12px;
-      width:50%
+      width:50%;
     }
   }
 </style>

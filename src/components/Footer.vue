@@ -18,7 +18,7 @@
     </section>
     <section class="trd-foot-section">
       <div class="space-between container">
-        <div class="blue-button">Sign-up Now!</div>
+        <a href="#" class="blue-button">Sign-up Now!</a>
         <div>
           <div class="space-between">
             <span>Follow us</span>
@@ -82,6 +82,7 @@ export default {
       display: inline-block;
       color:white;
       text-transform: uppercase;
+      text-decoration: none;
       width:200px;
       height: 35px;
       line-height: 35px;

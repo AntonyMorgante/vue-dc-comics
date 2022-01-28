@@ -1,7 +1,9 @@
 <template>
   <ul>
     <li v-for="(element,index) in socials" :key="index">
-      <img :src="element.image">
+      <a :href="element.url">
+        <img :src="element.image">
+      </a>
     </li>    
   </ul>
 </template>
